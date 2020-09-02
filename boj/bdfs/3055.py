@@ -3,7 +3,6 @@ from collections import deque
 input = lambda: sys.stdin.readline().rstrip() 
 r, c = map(int, input().split())
 board = [list(input()) for _ in range(r)]
-d = [[int(1e9)] * c for _ in range(r)]
 q = deque()
 
 # 물부터 큐에 넣어서 물 먼저 처리하도록 함
